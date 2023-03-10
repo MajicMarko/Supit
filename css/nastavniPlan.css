@@ -1,0 +1,144 @@
+* {
+  font-family: "Open Sans Condensed";
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+
+.nastavniPlan {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.nastavniPlan h1 {
+  font-weight: 600;
+  padding: 20px 20px;
+  border-bottom: 4px solid gold;
+  margin: 0 25%;
+}
+
+.nastavniPlanSadrzaj{
+  height: 50%;
+  width: 100%;
+  display: grid;
+  margin: 80px auto;  
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+}
+
+.brisiButton {
+  background-color: red;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+#kolegijRedak:nth-child(odd) {
+  background-color: white;
+}
+
+#kolegijRedak:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+#ects,
+#sati {
+  color: red;
+  font-weight: 700;
+}
+
+#ukupno {
+  border-top: 2px solid black;
+}
+
+#ukupno > #ukupnoTekst, #naslovi th  {
+  font-weight: 700;
+}
+
+#naslovi {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgrey;
+}
+
+#pretraga {
+  width: 400px;
+  padding-left: 5px;
+  border: 2px solid lightgray;
+  display: grid;
+  color: black;
+  background-color: white;
+}
+
+
+
+.tablica td,
+th {
+  border-top: 1px black;
+  border: none;
+  text-align: left;
+  padding: 8px;
+  width: 100%;
+}
+
+.ui-menu{
+  overflow-y: scroll;
+  height: 300px;
+  width: 100px;
+}
+
+
+
+/* tablet */
+@media (max-width:820px){
+  #pretraga {
+    width: 300px;
+    margin: 30px auto;
+  }
+
+  .nastavniPlanSadrzaj{
+    margin: 255px auto; 
+    display: flex;
+    text-align: center;
+    
+  }
+
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    padding: 20px;
+  }
+
+
+}
+
+
+/* phone */
+@media (max-width:600px){
+  .nastavniPlanSadrzaj{
+    width: 90%;
+  }
+
+  .wrapper{
+    padding: 0;
+  }
+
+  .kolegiji{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #pretraga {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+
+  
+}

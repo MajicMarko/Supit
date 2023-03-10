@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/nastavniPlan.css" />
+
+    <title>Nastavni Plam</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+    </header>
+
+    <div class="nastavniPlan">
+      <h1>Nastavni plan</h1>
+    </div>
+
+    <div class="nastavniPlanSadrzaj">
+      <div class="wrapper">
+        <div class="col">
+          <div class="kolegiji">
+            <h4 id="nazivKolegija">
+              <b>Naziv kolegija:</b>
+            </h4>
+
+            <input id="pretraga" placeholder="Upiši Kolegij: " />
+
+            <div class="prikaz">
+              <ul id="lista"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <table id="tablica" class="tableStriped tablica">
+            <tr id="naslovi">
+              <th>Kolegij</th>
+              <th>ECTS</th>
+              <th>Sati</th>
+              <th>P</th>
+              <th>V</th>
+              <th>Tip</th>
+              <th></th>
+            </tr>
+
+            <tr id="ukupno">
+              <th id="ukupnoTekst">Ukupno</th>
+
+              <th id="ects"></th>
+              <th id="sati"></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <!-- Start SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="./src/nastavniPlan.js"></script>
+    <script src="./src/main.js"></script>
+    <!-- End SCRIPTS -->
+  </body>
+</html>

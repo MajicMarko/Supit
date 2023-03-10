@@ -1,0 +1,79 @@
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .videoContainer{
+    margin: 0;
+    padding: 0;
+}
+
+.videoContainer video{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+}
+
+.textboxOnVideo{
+    color: white;
+    text-align: left;
+    font-size: 6.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.customTextShadow{
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.customColorGradient{
+  background: linear-gradient(0deg, rgba(226,114,16,1) 0%, rgba(196,15,97,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+
+
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+
+  @media (min-width: 600px) {
+
+
+    #typedString{
+      margin-top: 30px;
+    }
+
+    .textboxOnVideo{
+      font-size: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+  
+
+    .textboxOnVideo{
+      font-size: 60px;
+    }
+}
+
+  
+
+  
